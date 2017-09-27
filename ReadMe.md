@@ -25,14 +25,20 @@ Challenges within each section are meant to be solved in order.
 1.  Navigate to your home directory
     - `cd ~`
 1.  Navigate back to the previous directory
-    - `cd ../`
+    - `cd -`
 
 ### Variables
 
 1.  Print a sentence, like `Hello world`
+    - `echo 'Hello world'`
 1.  Print a variable value, like `$USER` or `$PATH`
+    - `echo $USER`
 1.  Set a variable `NAME` equal to your first name, then print its value
+    - `NAME='Chris'`
+    - `echo $NAME`
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
+    - `FULL_NAME='Chris Mauldin'`
+    - `echo $FULL_NAME`
 1.  Print all environment variables (names and values)
 1.  Make an alias named `hello` that prints `Hello world`
 1.  Make an alias named `gocode` that navigates to your code directory
