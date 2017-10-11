@@ -30,7 +30,7 @@ Challenges within each section are meant to be solved in order.
 ### Navigation
 
 1.  Print the path of your working directory
-    - `/Users/chrismauldin/desktop/core-unix-utilities/Core-Unix-Utilities`
+    - `pwd`
 1.  List the files in your working directory
     - `ls`
 1.  List the files with a particular extension, like `.txt`
@@ -61,7 +61,12 @@ Challenges within each section are meant to be solved in order.
     - `FULL_NAME='Chris Mauldin'`
     - `echo $FULL_NAME`
 1.  Print all environment variables (names and values)
+    - `compgen -v`
+    - `printenv`
+    - `env`
 1.  Make an alias named `hello` that prints `Hello world`
+    - `VARIABLE='Hello World'`
+    - `alias hello='echo $VARIABLE'`
 1.  Make an alias named `gocode` that navigates to your code directory
 1.  Print all aliases (names and values)
 
@@ -74,18 +79,32 @@ Challenges within each section are meant to be solved in order.
 ### Files
 
 1.  Navigate to the directory `Animals`
+    - `cd animals`
 1.  Print the contents of the file `Cats.txt`
+    - `cat Cats.txt`
 1.  Print the contents of both files `Cats.txt` and `Dogs.txt`
+    - `cat Cats.txt Dogs.txt`
+    - `head Cats.txt Dogs.txt`
 1.  Count the words in the file `Cats.txt`
+    - `wc Cats.txt`
 1.  Count the words in all files with the extension `.txt`
+    - `wc *.txt`
 1.  Copy the file `Dogs.txt` to a new file `BabyDogs.txt`
+    - `cat Dogs.txt >> BabyDogs.txt`
 1.  Rename the file `BabyDogs.txt` to `Puppies.txt`
+    - `mv BabyDogs.txt Puppies.txt`
 1.  Make a new directory named `Shelter` inside `Animals`
+    - `mkdir Animals/Shelter`
 1.  Move the file `Puppies.txt` into the directory `Shelter`
+
 1.  Copy the file `Cats.txt` to `Kittens.txt` inside `Shelter`
+    - `cp Cats.txt Shelter/kittens.txt`
 1.  List the files within the directory `Shelter`
 1.  Count the words in all `.txt` files inside `Shelter`
+    - `wc Shelter/*.txt`
 1.  Try to remove the directory `Shelter` (this should fail)
+    - `rm -r Shelter`
+    - `rmdir Shelter`
 1.  Remove all `.txt` files inside `Shelter`
 1.  Remove the directory `Shelter` (this should succeed)
 1.  Now cry because you just deleted those poor tiny animals
